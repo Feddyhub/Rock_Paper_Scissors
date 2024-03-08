@@ -1,0 +1,101 @@
+.SCORE
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.5em;
+    margin-right:15px ;
+    margin-bottom: 0px;
+}
+.mainvecomp
+{
+    
+
+    font-size: 1.5em;
+    margin-right:15px ;
+    margin-bottom: 0px;
+}
+#coop {
+    margin-left: 20%;
+    margin-bottom: 3px;
+    height: 150px;
+    width: 250px;
+    /* align-items: center; */ /* Bu satır gereksizdir ve kaldırılabilir */
+ }
+#te
+{
+    margin-left: 15%;
+}
+.SCOREBOARD
+{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0px;
+}
+
+#YvsC
+{
+    margin-left: 125px;
+    display: flex;
+    margin-bottom: 35px;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+.header
+{
+    display: flex;
+flex-direction: column;
+align-items: center;
+font-size: 4em;
+}
+.text
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: medium;
+    margin-bottom: 25px;
+}
+.main
+{
+    
+    height: 450px;
+    display: flex;
+flex-direction: column;
+align-items: left;
+  font-size: large;
+  margin-left: 15%;
+    
+    
+}
+#rock_but
+{
+    margin-bottom: 3px;
+    height: 97px;
+    width: 300px;
+    align-items: center;
+}
+#paper_but {
+    margin-bottom: 3px;
+    height: 97px;
+    width: 300px;
+    /* align-items: center; */ /* Bu satır gereksizdir ve kaldırılabilir */
+    margin-bottom: 10px; /* İkinci margin-bottom değeri gereksizdir ve kaldırılmalı */
+ }
+#scissors_but
+{
+    
+    margin-bottom: 3px;
+    height: 97px;
+    width: 300px;
+    align-items: center;
+}
+#bir
+{
+    margin-left: 15%;
+}
+
