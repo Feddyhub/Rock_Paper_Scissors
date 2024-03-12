@@ -27,7 +27,7 @@ function getResult(x,y)
         /*DRAW STATE*/
         case "rock_butrock_but":
         case "paper_butpaper_but":
-        case "scissors_but":
+        case "scissors_butscissors_but":
             console.log("Berabere")
             currentboard.innerHTML ="DRAW"
             currentboard.style.color="grey"
@@ -45,27 +45,31 @@ function getResult(x,y)
             currentboard.style.color="red"
             break;
             /* PAPER WIN SCENARIO */
-        case "paper_butrock_but":
-            a++;
-            currentboard.innerHTML ="YOU WIN (Paper win)"
-            currentboard.style.color="green"
-            break;
-        case "rock_butpaper_but": 
-            b++;  
-            currentboard.innerHTML ="COMPUTER WIN (Paper win)"
-            currentboard.style.color="red"
-            break;
-            /* SCISSORS WIN SCENARIO */
-        case "scissor_butpaper_but":
-            a++;
-            currentboard.innerHTML ="YOU WIN (Scissors win)"
-            currentboard.style.color="green"
-            break;
-        case "paper_butscissor_but":
-            b++;
-            currentboard.innerHTML ="COMPUTER WIN (Scissors win)"
-            currentboard.style.color="red"
-            break;
+
+            case "paper_butrock_but":
+                a++;
+                currentboard.innerHTML ="YOU WIN (Paper win)"
+                currentboard.style.color="green"
+                break;
+            case "rock_butpaper_but": 
+                b++;  
+                currentboard.innerHTML = "COMPUTER WIN (Paper win)"
+                currentboard.style.color="red"
+                break;
+
+                 /* SCISSORS WIN SCENARIO */
+            case "scissors_butpaper_but":
+                a++;
+                currentboard.innerHTML ="YOU WIN (Scissors win)"
+                currentboard.style.color="green"
+                break;
+            case "paper_butscissors_but":
+                b++;
+                currentboard.innerHTML ="COMPUTER WIN (Scissors win)"
+                currentboard.style.color="red"
+                break;
+               
+       
     }
     
     let cumulative = scoreboard.innerHTML = (a - b);
